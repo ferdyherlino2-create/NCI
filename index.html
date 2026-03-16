@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NCI — Nusantara Culinary Index</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="ferdi.css">
+  <script type="module" src="ferdi.js" defer></script>
+  <script>
+  function scrollToSection(id) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    var navHeight = document.querySelector('nav') ? document.querySelector('nav').offsetHeight : 70;
+    var top = el.getBoundingClientRect().top + window.pageYOffset - navHeight - 20;
+    window.scrollTo({ top: top, behavior: 'smooth' });
+  }
+</script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">
+    <img src="">
+    <span class="logo-text">Nusantara <span>Culinary</span> Index</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#" onclick="scrollToSection('insight');return false;" class="active-link" id="nav-id">Insight</a></li>
+    <li><a href="#" onclick="scrollToSection('features');return false;">Fitur</a></li>
+    <li><a href="#" onclick="scrollToSection('about');return false;">Tentang</a></li>
+    <li><a href="#" onclick="scrollToSection('forum');return false;">Forum</a></li>
+  </ul>
+  <div class="nav-lang">
+    <button class="lang-btn active" onclick="setLang('id')">ID</button>
+    <button class="lang-btn" onclick="setLang('en')">EN</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-deco">NCI</div>
+  <div class="hero-tag" id="hero-tag">🔥 Platform Kuliner Bisnis Indonesia</div>
+  <h1 class="hero-title">
+    <div class="line1">NUSANTARA</div>
+    <div class="line2">CULINARY</div>
+    <div class="line3">INDEX</div>
+  </h1>
+  <p class="hero-sub" id="hero-sub">
+    Platform insight bisnis kuliner profesional terlengkap di Indonesia.
+    Data real-time, tren terkini, dan analisis mendalam dari Sabang hingga Merauke.
+  </p>
+  <div class="hero-actions">
+    <button onclick="scrollToSection('insight')" class="btn-primary" id="hero-cta1">🗺️ Jelajahi Insight Kota</button>
+    <button onclick="scrollToSection('features')" class="btn-ghost" id="hero-cta2">Lihat Semua Fitur →</button>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stat-item observe-fade">
+    <div class="stat-number" id="stat1">514+</div>
+    <div class="stat-label" id="sl1">Kota / Kabupaten</div>
+    <div class="stat-coming" id="sc1">coming soon</div>
+  </div>
+  <div class="stat-item observe-fade">
+    <div class="stat-number" id="stat2">34</div>
+    <div class="stat-label" id="sl2">Provinsi Terdata</div>
+    <div class="stat-coming" id="sc2">coming soon</div>
+  </div>
+  <div class="stat-item observe-fade">
+    <div class="stat-number" id="stat3">2.4K+</div>
+    <div class="stat-label" id="sl3">Index Kuliner</div>
+    <div class="stat-coming" id="sc3">coming soon</div>
+  </div>
+  <div class="stat-item observe-fade">
+    <div class="stat-number" id="stat4">18</div>
+    <div class="stat-label" id="sl4">Kota Aktif Beta</div>
+    <div class="stat-coming" id="sc4">aktif sekarang</div>
+  </div>
+</div>
+
+<!-- FEATURES SECTION -->
+<section class="features-section" id="features">
+  <div class="section-header observe-fade">
+    <span class="section-tag" id="feat-tag">Platform Features</span>
+    <h2 class="section-title" id="feat-title">Fitur <span>Lengkap</span><br>Sedang Disiapkan</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="features-grid">
+    <div class="feature-card observe-fade">
+      <span class="coming-badge">Coming Soon</span>
+      <div class="feature-icon">📊</div>
+      <h3 class="feature-title" id="f1t">Trending Kuliner Index</h3>
+      <p class="feature-desc" id="f1d">Pantau tren kuliner terpanas di seluruh Indonesia dengan data real-time dan analisis sentimen pasar.</p>
+    </div>
+    <div class="feature-card observe-fade">
+      <span class="coming-badge">Coming Soon</span>
+      <div class="feature-icon">🗺️</div>
+      <h3 class="feature-title" id="f2t">Peta Interaktif Indonesia</h3>
+      <p class="feature-desc" id="f2d">Visualisasi peta kuliner nusantara — eksplorasi potensi bisnis berdasarkan geografi secara interaktif.</p>
+    </div>
+    <div class="feature-card observe-fade">
+      <span class="coming-badge">Coming Soon</span>
+      <div class="feature-icon">📰</div>
+      <h3 class="feature-title" id="f3t">Berita & Insight Terbaru</h3>
+      <p class="feature-desc" id="f3d">Agregasi berita bisnis F&B, regulasi, dan insight dari para pakar industri kuliner Indonesia.</p>
+    </div>
+    <div class="feature-card observe-fade">
+      <span class="coming-badge">Coming Soon</span>
+      <div class="feature-icon">📈</div>
+      <h3 class="feature-title" id="f4t">Statistik & Data Bisnis</h3>
+      <p class="feature-desc" id="f4d">Dashboard statistik bisnis kuliner nasional — omset, pertumbuhan, dan proyeksi pasar berbasis data.</p>
+    </div>
+    <div class="feature-card observe-fade" style="border-color: rgba(232,80,10,0.4); background: rgba(232,80,10,0.05);">
+      <span class="coming-badge" style="background: rgba(46,204,113,0.2); border-color: rgba(46,204,113,0.4); color: #2ECC71;">● Aktif</span>
+      <div class="feature-icon" style="background: linear-gradient(135deg, rgba(46,204,113,0.2), rgba(232,80,10,0.1));">🏙️</div>
+      <h3 class="feature-title" id="f5t">Insight Skala Kota</h3>
+      <p class="feature-desc" id="f5d">Data dan analisis kuliner mendalam per kota — tren lokal, pemain utama, dan peluang bisnis di level kota.</p>
+    </div>
+    <div class="feature-card observe-fade">
+      <span class="coming-badge">Coming Soon</span>
+      <div class="feature-icon">🤝</div>
+      <h3 class="feature-title" id="f6t">Forum Profesional</h3>
+      <p class="feature-desc" id="f6d">Komunitas eksklusif pelaku bisnis kuliner, investor, dan konsultan F&B se-Indonesia untuk berdiskusi.</p>
+    </div>
+  </div>
+</section>
+
+<!-- INSIGHT SECTION -->
+<section class="insight-section" id="insight">
+  <div class="section-header observe-fade">
+    <span class="section-tag" id="ins-tag">🏙️ City Insight — Beta Aktif</span>
+    <h2 class="section-title" id="ins-title">Insight <span>Skala Kota</span></h2>
+    <div class="divider"></div>
+  </div>
+
+  <!-- Province Tabs -->
+  <div class="observe-fade">
+    <p style="font-size:12px; color:var(--text-muted); margin-bottom:12px; font-family:'Space Mono',monospace; letter-spacing:1px; text-transform:uppercase;" id="prov-label">Pilih Provinsi:</p>
+    <div class="region-tabs" id="provinceTabs"></div>
+  </div>
+
+  <!-- City Grid -->
+  <div class="observe-fade" style="margin-top:24px;">
+    <p style="font-size:12px; color:var(--text-muted); margin-bottom:12px; font-family:'Space Mono',monospace; letter-spacing:1px; text-transform:uppercase;" id="city-label">Pilih Kota:</p>
+    <div class="city-grid" id="cityGrid"></div>
+  </div>
+
+  <!-- Insight Dashboard -->
+  <div class="insight-main" id="insightMain"></div>
+</section>
+
+<!-- FOOTER -->
+<footer id="about">
+  <div class="footer-brand">
+    <a href="#" class="nav-logo" style="text-decoration:none;">
+      <img src=">
+      <span class="logo-text">Nusantara <span>Culinary</span> Index</span>
+    </a>
+    <p id="footer-desc">Platform referensi bisnis kuliner profesional pertama di Indonesia yang memetakan tren, data, dan insight dari seluruh nusantara.</p>
+  </div>
+  <div class="footer-col">
+    <h4>Platform</h4>
+    <ul>
+      <li><a href="#insight">City Insight</a></li>
+      <li><a href="#features">Culinary Index</a></li>
+      <li><a href="#">Peta Kuliner</a></li>
+      <li><a href="#">Forum Bisnis</a></li>
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h4>Wilayah</h4>
+    <ul>
+      <li><a href="#">Jawa</a></li>
+      <li><a href="#">Sumatra</a></li>
+      <li><a href="#">Kalimantan</a></li>
+      <li><a href="#">Sulawesi</a></li>
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h4>Info</h4>
+    <ul>
+      <li><a href="#">Tentang NCI</a></li>
+      <li><a href="#">Partnership</a></li>
+      <li><a href="#">Media Kit</a></li>
+      <li><a href="#">Kontak</a></li>
+    </ul>
+  </div>
+</footer>
+
+<div class="footer-bottom">
+  <span>© 2024 Nusantara Culinary Index. All rights reserved.</span>
+  <span style="font-family:'Space Mono',monospace; font-size:10px; color:rgba(160,120,90,0.5);">BETA v0.1.0</span>
+</div>
+
+
+</body>
+        </html>
